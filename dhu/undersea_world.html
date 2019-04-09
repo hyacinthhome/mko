@@ -1,8 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!-- saved from url=(0062)http://demo.cssmoban.com/cssthemes4/tpmo_510_letter/index.html -->
 <html class=" js cssanimations">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
   
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,9 +15,9 @@
   <script type="text/javascript" src="js/functiondemo.js"></script>
   <script type="text/javascript" src="js/jquery.fadequeue.js"></script>
 <body>
-  <audio preload autoplay="autoplay" hide>
-    <source src="vid/prompto.mp3" type="audio/mpeg" />
-  </audio>
+<audio controls autoplay>
+<source src="vid/bgm.mp3" type="audio/mpeg"/>
+</audio>
   <div class="rightNav">
 	<a id="nav_top"><img src="css/img/to_top.png"></a>
 	<a id="nav1"><img src="css/img/dot.png"></a>
@@ -97,7 +99,7 @@
         <p>约800~4000米</p>
         <a id="bf" onclick="bf();" style="cursor:pointer;"></a>
       </div>
-      <div class="tile">
+      <div class="tile" onclick="bf5();">
         <div class="text">
           <h1>棱皮龟<img id="controls" src="css/img/play.png"></h1>
           <img src="css/img/img11.jpg">
@@ -107,7 +109,7 @@
         </div>
     </div>
     
-    <div class="tile">
+    <div class="tile" onclick="bf6();">
       <div class="text">
         <h1>大王酸浆鱿<img id="controls" src="css/img/play.png"></h1>
         <img src="css/img/img16.jpg">
@@ -337,6 +339,10 @@
 </audio>
 <audio src="vid/04.mp3" controls preload id="music4" hidden>
 </audio>
+<audio src="vid/05.mp3" controls preload id="music5" hidden>
+</audio>
+<audio src="vid/06.mp3" controls preload id="music6" hidden>
+</audio>
 <audio src="vid/07.mp3" controls preload id="music7" hidden>
 </audio>
 <audio src="vid/08.mp3" controls preload id="music8" hidden>
@@ -375,6 +381,26 @@ function bf3(){
 }
 function bf4(){
  	var audio = document.getElementById('music4'); 
+ 	if(audio!==null){             
+		if(audio.paused){                 
+      		audio.play();  
+		}else{
+			audio.pause();
+		}
+ 	} 
+}
+function bf5(){
+ 	var audio = document.getElementById('music5'); 
+ 	if(audio!==null){             
+		if(audio.paused){                 
+      		audio.play();  
+		}else{
+			audio.pause();
+		}
+ 	} 
+}
+function bf6(){
+ 	var audio = document.getElementById('music6'); 
  	if(audio!==null){             
 		if(audio.paused){                 
       		audio.play();  
